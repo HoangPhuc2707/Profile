@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Open+Sans:ital,wght@0,600;1,400&family=Pacifico&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.back-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.top {
+    position: absolute;
+    left: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: rgb(255, 77, 77);
+}
+
+.header {
+    padding-top: 30px;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.hp {
+    font-size: 40px;
+}
+
+.nen-gt {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.box-left img {
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+    animation: animation 3s infinite linear;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.box-between {
+    justify-content: center;
+    text-align: center;
+    margin: 0 250px;
+    margin-top: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px 1px white;
+}
+
+.box-between img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.box-right img {
+    width: 200px;
+    height: 350px;
+    border-radius: 20px;
+    animation: animation 3s infinite linear;
+    animation-delay: 0.5s;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main {
+    text-align: center;
+}
+.my-info p {
+    color: white;
+    font-size: 15px;
+}
+.my-info h1 {
+    color: rgb(255, 242, 0);
+    font-family: 'Concert One', cursive;
+}
+ul.skills{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.skills li{
+    list-style: none;
+    padding: 0 30px;
+    margin: 0 20px;
+    width: 80px;
+    height: 220px;
+    box-shadow: 0 0 10px 1px white;
+    border-radius: 10px;
+    backdrop-filter: blur(2.5px);
+}
+ul.skills li:hover{
+    transform: translateY(-10px);
+    transition: 0.25s ease-in-out;
+}
+ul.skills h2{
+    color: white;
+    font-family: 'Concert One', cursive;
+}
+.language{
+    text-align: center;
+}
+.language p{
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+    color: white;
+    margin: 10px 0;
+}
+.icon-loadbar img{
+    width: 90px;
+    height: 30px;
+}
+.icon-html img{
+    width: 45px;
+    height: 45px;
+}
+ul.games{
+    padding-top: 20px;
+    padding-bottom: 200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.games li{
+    list-style: none;
+    padding: 0 30px;
+    margin: 0 20px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 10px 1px white;
+    border-radius: 10px;
+    backdrop-filter: blur(2.5px);
+}
+.img-lq img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.gamess h2{
+    color: white;
+    font-family: 'Concert One', cursive;
+}
